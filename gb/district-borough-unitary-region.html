@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link href="../style/page.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../style/map.css" rel="stylesheet" type="text/css" media="all">
+	</head>
+
+	<body>
+		<div id="copy">
+			<h1>GB Districts, Boroughs and Unitary Autorities</h1>
+
+			<p>An SVG map of Great Britain, showing the boundaries of 
+			the principal local authorities: Districts, Boroughs and 
+			Unitary Regions.</p>
+
+			<p>
+			Boundary data from <a href="https://www.ordnancesurvey.co.uk">Ordnance Survey</a>, licensed under the
+            <a href="https://www.ordnancesurvey.co.uk/oswebsite/docs/licences/os-opendata-licence.pdf">Open Government
+            Licence v1.0</a>.</p>
+			<p class="copyright-notice">Ordnance Survey data © Crown copyright and database right 2013.</p>
+		</div>
+
+		<div id="map"></div>
+
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="http://d3js.org/topojson.v1.min.js"></script>
+		<script src="../script/map.js"></script>
+        <script>
+            d3.json('../data/gb.json', function(error, topology) {
+                d3.select('#map').call(map()
+                        .topology(topology)
+                        .width(600)
+                        .height(1200)
+                );
+            });
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Archivo Narrow';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Archivo Narrow Regular'), local('ArchivoNarrow-Regular'), url(http://themes.googleusercontent.com/static/fonts/archivonarrow/v2/DsLzC9scoPnrGiwYYMQXpp4t0mJKPaLVqklzZuc32b4.woff) format('woff');
+}
+
+html { font-size: 62.5%; } 
+body { font-size: 16px; font-size: 1.6rem; }
+
+body {
+	font-family: 'Archivo Narrow', sans-serif;
+}
+
+#copy {
+	position: fixed;
+	width: 200px;
+	margin: 0px 50px;
+}
+
+.copyright-notice {
+	font-size: 8px; font-size: 0.8rem;
+}
+
+#map {
+	margin: 0px auto;
+	width: 600px;
+}
+

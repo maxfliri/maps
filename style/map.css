@@ -1,0 +1,20 @@
+
+.region {
+	fill: silver;
+	stroke: white;
+	stroke-width: 0.5px;
+}
+
+.region.selected {
+	fill: red;
+}
+
+.label text {
+	font-family: sans-serif;
+	font-size: 9px; font-size: 0.9rem;
+}
+
+.label rect {
+	fill: #eeeeee;
+	fill-opacity: 0.6;
+}
